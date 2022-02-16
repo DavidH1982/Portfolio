@@ -162,7 +162,7 @@ body {
   margin: 10px auto;
 }
 
-.iframeContainer {
+.modalContainer {
   height: 200px;
   width: 90vw;
   display: flex;
@@ -183,8 +183,8 @@ body {
   margin-bottom: 50px;
 }
 .projectThumbnails:hover {
-  transform: scale(1.2);
-  cursor: point;
+  transform: scale(1.01);
+  cursor: pointer;
 }
 .drumkitProject {
   background-image: url(./images/drumkitProject.png);

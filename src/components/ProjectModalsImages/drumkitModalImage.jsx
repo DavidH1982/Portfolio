@@ -1,22 +1,22 @@
 import "./ProjectModalsImages.css";
 import { useState } from "react";
 import { Modal } from "react-responsive-modal";
-import DiceGameModal from "../ProjectModalsModals/diceGameModalText";
+import DrumkitModal from "../ProjectModalsModals/drumkitModalText";
 
-const ModalDiceGame = () => {
+const ModalDrumkit = () => {
 
     const [ open, setOpen ] = useState(false);
 
     return (
         <>
             <div className="iframeContainer">
-                <div className="projectThumbnails dicegameProject" onClick={()=> setOpen(true)}/>
+                <div className="projectThumbnails drumkitProject" onClick={()=> setOpen(true)}/>
             </div>
             <Modal open={open} onClose={()=> setOpen(false)}>
-                <DiceGameModal />
+                <DrumkitModal />
             </Modal>
         </>
     );
 };
 
-export default ModalDiceGame;
+export default ModalDrumkit;

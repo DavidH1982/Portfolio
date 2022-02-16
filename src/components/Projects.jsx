@@ -1,11 +1,8 @@
 import "../App.css";
-import { useState } from "react";
-import { Modal } from "react-responsive-modal";
 import ModalDiceGame from "./ProjectModalsImages/diceGameModalImage";
+import ModalDrumkit from "./ProjectModalsImages/drumkitModalImage";
 
 const Projects = () => {
-
-    const [ open, setOpen ] = useState(false);
 
     return (
         <>
@@ -13,21 +10,27 @@ const Projects = () => {
             <div className="projectText">
                 
             </div>
-            <div className="iframeContainer">
-                <ModalDiceGame />
-                <div className="projectThumbnails drumkitProject" />
-                <div className="projectThumbnails drumkitProject" />
-                <div className="projectThumbnails drumkitProject" />
-                <div className="projectThumbnails drumkitProject" />
-                <div className="projectThumbnails drumkitProject" />
-                {/* <a href="https://davidh1982.github.io/Dice-Game/" target="_blank" className="projectThumbnails dicegameProject"></a>
-                <a href="https://davidh1982.github.io/Numpad-Drumkit/" target="_blank" className="projectThumbnails drumkitProject"></a>
-                <a href="https://davidh1982.github.io/Numpad-Drumkit/" target="_blank" className="projectThumbnails drumkitProject"></a>
-                <a href="https://davidh1982.github.io/Numpad-Drumkit/" target="_blank" className="projectThumbnails drumkitProject"></a>
-                <a href="https://davidh1982.github.io/Numpad-Drumkit/" target="_blank" className="projectThumbnails drumkitProject"></a>
-                <a href="https://davidh1982.github.io/Numpad-Drumkit/" target="_blank" className="projectThumbnails drumkitProject"></a> */}
+                <div className="modalContainer">
+                    <div className="projectThumbnails">
+                        <ModalDiceGame />
+                    </div>
+                    <div className="projectThumbnails">
+                        <ModalDrumkit />
+                    </div>
+                    <div className="projectThumbnails">
+                        <ModalDrumkit />
+                    </div>
+                    <div className="projectThumbnails">
+                        <ModalDrumkit />
+                    </div>
+                    <div className="projectThumbnails">
+                        <ModalDrumkit />
+                    </div>
+                    <div className="projectThumbnails">
+                        <ModalDrumkit />
+                    </div>                
+                </div>
             </div>
-        </div>
         </>
     );
 };

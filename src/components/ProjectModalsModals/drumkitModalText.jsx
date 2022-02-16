@@ -1,14 +1,14 @@
 import "./ProjectModalsModals.css";
 
-const DiceGameModal = () => {
+const DrumkitModal = () => {
     return (
         <>
         <div className="modalWrapper diceGameWrapper">
-            <h2>Dice Game Challenge</h2>
-            <p>{`This dice game etc etc etc`}</p>
+            <h2>Drumkit Challenge</h2>
+            <p>{`This drumkit challenge etc etc etc`}</p>
         </div>
         </>
     );
 };
 
-export default DiceGameModal;
+export default DrumkitModal;
