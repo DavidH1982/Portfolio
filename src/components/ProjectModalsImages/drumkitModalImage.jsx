@@ -1,4 +1,3 @@
-import "./ProjectModalsImages.css";
 import { useState } from "react";
 import { Modal } from "react-responsive-modal";
 import DrumkitModal from "../ProjectModalsModals/drumkitModalText";
@@ -9,10 +8,10 @@ const ModalDrumkit = () => {
 
     return (
         <>
-            <div className="iframeContainer">
-                <div className="projectThumbnails drumkitProject" onClick={()=> setOpen(true)}/>
+            <div onClick={()=> setOpen(true)}>
+                <div className="projectThumbnails drumkitProject"/>
             </div>
-            <Modal open={open} onClose={()=> setOpen(false)}>
+            <Modal open={open} onClose={() => setOpen(false)}>
                 <DrumkitModal />
             </Modal>
         </>
