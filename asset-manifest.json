@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.5ecbd7f5.css",
+    "main.js": "/portfolio/static/js/main.d5bee209.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/drumkitProject.png": "/portfolio/static/media/drumkitProject.248d6d0aa761066f1cfa.png",
+    "static/media/dicegameProject.png": "/portfolio/static/media/dicegameProject.c4db8c6c5325c7ecd50d.png",
+    "static/media/githubLogo.png": "/portfolio/static/media/githubLogo.f4213b43f78faab2abec.png",
+    "static/media/linkedinLogo.png": "/portfolio/static/media/linkedinLogo.9a5385181289bd35290a.png",
+    "index.html": "/portfolio/index.html",
+    "main.5ecbd7f5.css.map": "/portfolio/static/css/main.5ecbd7f5.css.map",
+    "main.d5bee209.js.map": "/portfolio/static/js/main.d5bee209.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ecbd7f5.css",
+    "static/js/main.d5bee209.js"
+  ]
+}
