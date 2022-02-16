@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #efdbb2;
+  border: 20px solid white;
+  box-sizing: border-box;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ====================NAVBAR STYLING===================== */
+
+.navbarContainer {
+  width: 97.5vw;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  position: fixed;
+  /* left: -20px; */
+  top: 20px;
+  margin-left: -20px;
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
+  background-color: #A98B4D;
+  color: white;
+}
+.navbarMenuItem {
+  width: 12%;
+  text-align: center;
+  padding-top: 9px;
+}
+.navLink:active,
+.navLink:visited,
+.navLink:link {
+  text-decoration: none;
+  color: white;
+}
+.socialLinkContainer {
+  display: flex;
+  padding-top: 0;
+  flex-direction: row;
+}
+.socialLink {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.githubLink,
+.linkedinLink {
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+} 
+.githubLink {
+  background-image: url(./images/githubLogo.png);
+}
+.socialLink:last-of-type {
+  padding-top: 9px;
+}
+.linkedinLink {
+  background-image: url(./images/linkedinLogo.png);
+  height: 30px;
+  width: 110%;
+}
+
+/* =================QUOTATION STYLING================== */
+
+.quoteContainer {
+  height: 550px;
+  width: 340px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 5px solid #A98B4D;
+  position: relative;
+  top: 100px;
+  left: 75%;
+  text-align: right;
+  animation: quoteEntry 1.5s ease-out 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: unset;
+  color: #685044;
+}
+
+@keyframes quoteEntry {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  /* 50% {
+    opacity: 0.33;
+    transform: translateX(-126px);
+  } */
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+
+  }
+}
+
+.quoteText {
+  height: 450px;
+  font-size: 48px;
+  font-family: 'Tangerine';
+  height: 250px;
+}
+.quoteText p {
+  height: inherit;
+  margin: 0;
+}
+.quoteAuthor {
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  display: inline-block;
+}
+.quoteLink:active,
+.quoteLink:visited,
+.quoteLink:link {
+  text-decoration: none;
+  color: #685044; 
+}
+
+/* ===================ABOUT ME PAGE==================== */
+
+.aboutmePage {
+  height: 100vh;
+  width: 97.5vw;
+  background-color: red;
+  box-sizing: border-box;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+/* =====================PROJECTS PAGE=================== */
+
+.projectsPage {
+  height: 100vh;
+  width: 97.5vw;
+  box-sizing: border-box;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectText {
+  width: 80vw;
+  height: 150px;
+  border: 1px solid black;
+  margin: 10px auto;
+}
+
+.iframeContainer {
+  height: 200px;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  top: 20px;
+  left: 5vw;
+}
+.projectThumbnails {
+  height: 180px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+.drumkitProject {
+  background-image: url(./images/drumkitProject.png);
+}
+.dicegameProject {
+  background-image: url(./images/dicegameProject.png);
+}
