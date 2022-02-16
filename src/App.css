@@ -182,6 +182,10 @@ body {
   box-sizing: border-box;
   margin-bottom: 50px;
 }
+.projectThumbnails:hover {
+  transform: scale(1.2);
+  cursor: point;
+}
 .drumkitProject {
   background-image: url(./images/drumkitProject.png);
 }
