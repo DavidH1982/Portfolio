@@ -9,7 +9,7 @@ const Navbar = () => {
         <>
         <Router>
         <div className="navbarContainer">
-            <Link to="/" className="navLink navbarMenuItem">Home</Link>
+            <Link to="/Portfolio" className="navLink navbarMenuItem">Home</Link>
             <Link to="/aboutme" className="navLink navbarMenuItem">About Me</Link>
             <Link to="/projects" className="navLink navbarMenuItem">Projects</Link>
             <div className="navbarMenuItem"><div /></div>
@@ -21,7 +21,7 @@ const Navbar = () => {
             </div>
         </div>
         <Switch>
-            <Route exact path="/">
+            <Route exact path="/Portfolio">
                 <Home />
             </Route>
             <Route exact path="/aboutme">
