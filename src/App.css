@@ -1,134 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
-body {
+.App {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background-color: #efdbb2;
-  border: 20px solid white;
   box-sizing: border-box;
-  padding: 20px;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* ====================NAVBAR STYLING===================== */
-
-.navbarContainer {
-  width: 97.5vw;
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style: none;
-  position: fixed;
-  /* left: -20px; */
-  top: 20px;
-  margin-left: -20px;
-  /* padding-left: 20px; */
-  /* padding-right: 20px; */
-  background-color: #A98B4D;
-  color: white;
-}
-.navbarMenuItem {
-  width: 12%;
-  text-align: center;
-  padding-top: 9px;
-}
-.navLink:active,
-.navLink:visited,
-.navLink:link {
-  text-decoration: none;
-  color: white;
-}
-.socialLinkContainer {
-  display: flex;
-  padding-top: 0;
-  flex-direction: row;
-}
-.socialLink {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-.githubLink,
-.linkedinLink {
-  height: 40px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-} 
-.githubLink {
-  background-image: url(./images/githubLogo.png);
-}
-.socialLink:last-of-type {
-  padding-top: 9px;
-}
-.linkedinLink {
-  background-image: url(./images/linkedinLogo.png);
-  height: 30px;
-  width: 110%;
-}
-
 /* =================QUOTATION STYLING================== */
 
-.quoteContainer {
-  height: 550px;
-  width: 340px;
-  padding: 20px;
+.quoteContainer,
+.quoteClose {
+  height: 150px;
+  width: 70vw;
+  padding: 10px;
   box-sizing: border-box;
-  border: 5px solid #A98B4D;
+  border-top: 3px solid #212121;
+  border-left: 3px solid #212121;
+  border-bottom: 1px solid #212121;
+  border-right: 1px solid #212121;
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px 2px rgba(0,0,0,0.78);
   position: relative;
-  top: 100px;
-  left: 75%;
-  text-align: right;
-  animation: quoteEntry 1.5s ease-out 1;
+  bottom: -200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: unset;
-  color: #685044;
+  opacity: 0.8;
+  z-index: 99;
+}
+.quoteContainer {
+  animation: quoteEntry 2s cubic-bezier(.29,.9,.53,1) 1;
+}
+.quoteCloser {
+  border: 1px solid #212121;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  position: relative;
+  left: 99%;
+  top: -9px;
+}
+.quoteCloser:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.quoteCloser p {
+  height: inherit;
+  width: inherit; 
+  text-align: center; 
+  margin: 0;
+  position: inherit;
+  line-height: 15px;
 }
 
 @keyframes quoteEntry {
   0% {
     opacity: 0;
-    transform: translateX(-250px);
+    transform: translateY(350px);
   }
-  /* 50% {
-    opacity: 0.33;
-    transform: translateX(-126px);
-  } */
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateY(0px);
 
   }
 }
-
 .quoteText {
-  height: 450px;
-  font-size: 48px;
+  height: 130px;
+  font-size: 36px;
   font-family: 'Tangerine';
   height: 250px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 .quoteText p {
-  height: inherit;
   margin: 0;
 }
 .quoteAuthor {
   font-size: 16px;
   font-weight: bold;
-  height: 50px;
-  display: inline-block;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
 }
 .quoteLink:active,
 .quoteLink:visited,
 .quoteLink:link {
   text-decoration: none;
-  color: #685044; 
+}
+.quoteClose {
+  animation: close 1.2s ease 1;
+  animation-fill-mode: forwards;
+  bottom: 350;
+}
+@keyframes close {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(1250px);
+  }
 }
 
 /* ===================ABOUT ME PAGE==================== */
@@ -145,6 +127,7 @@ body {
 
 h1 {
   text-align: center;
+  z-index: 99;
 }
 
 .aboutmeFrame {
@@ -177,6 +160,7 @@ h1 {
   position: absolute;
   left: -40px;
   top: -100px;
+  z-index: 99;
 }
 /* =====================PROJECTS PAGE=================== */
 
@@ -194,8 +178,36 @@ h1 {
 .projectText {
   width: 80vw;
   height: 150px;
-  border: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
   margin: 10px auto;
+  border-start-start-radius: -50%;
+  border-start-end-radius: -50%;
+  background-color: #212121;
+}
+.projectText:before {
+  content: '';
+  position: absolute;
+  top: -54px;
+  left: 139px;
+  height: 12%;
+  width: 80vw;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+  border-end-end-radius: 30%;
+  border-end-start-radius: 30%;
+}
+.projectText:after {
+  content: '';
+  position: absolute;
+  top: 133px;
+  left: 139px;
+  height: 12%;
+  width: 80vw;
+  border-top: 1px solid black;
+  border-start-start-radius: 30%;
+  border-start-end-radius: 30%;
+  background: solid;
 }
 
 .modalContainer {
@@ -208,6 +220,7 @@ h1 {
   position: relative;
   top: 20px;
   left: 5vw;
+  z-index: 99;
 }
 .projectThumbnails {
   height: 180px;
@@ -217,14 +230,47 @@ h1 {
   background-size: cover;
   box-sizing: border-box;
   margin-bottom: 50px;
+  z-index: 99;
 }
 .projectThumbnails:hover {
   transform: scale(1.01);
   cursor: pointer;
+  opacity: 0.7;
 }
-.drumkitProject {
+.drumkitThumbnail {
   background-image: url(./images/drumkitProject.png);
 }
-.dicegameProject {
+.diceGameThumbnail {
   background-image: url(./images/dicegameProject.png);
+}
+.genericThumbnail {
+  background-color: gray;
+}
+.modalHidden {
+  width: 18%;
+  opacity: 0;
+}
+.modalShown {
+  width: 18%;
+  opacity: 1;
+}
+.popupContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 70vw;
+  height: 300px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+.modal {
+  height: 300px;
+  width: 18%;
+  background-color: white;
+  z-index: 99;
+}
+.modal button {
+  height: 50px;
+  width: 100px;
 }

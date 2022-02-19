@@ -1,17 +1,15 @@
 import React from 'react';
 import './App.css';
+import './ColorChange.css';
 import Navbar from './components/Navbar';
-import Home from './components/Home'
+import ColorChange from './components/colorChange';
 
 const App = () => {
-  
-  // const [ data, setData ] = useState('');
 
   return (
     <>
-    <div className="App">
         <Navbar />
-    </div>
+        <ColorChange />
     </>
   );
 }
