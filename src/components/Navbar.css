@@ -1,0 +1,64 @@
+/* ====================NAVBAR STYLING===================== */
+
+.navbarContainer {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    position: fixed;
+    background: none;
+    z-index: 99;
+  }
+  .navbarMenuItem {
+    width: 12%;
+    text-align: center;
+    padding-top: 9px;
+  }
+  .navLink:active,
+  .navLink:visited,
+  .navLink:link {
+    text-decoration: none;
+  }
+  .navLink:nth-of-type(1),
+  .navLink:nth-of-type(2),
+  .navLink:nth-of-type(3) {
+    transform: translateX(200px);
+  }
+  .socialLinkContainer {
+    display: flex;
+    padding-top: 0;
+    flex-direction: row;
+    margin-left: 250px;
+    align-self: flex-end;
+  }
+  .socialLink {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .githubLink,
+  .linkedinLink {
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  } 
+  .githubLink {
+    background-image: url(../images/githubLogo.png);
+  }
+  #navbarGitImg,
+  #navbarLinkedinImg {
+    display: none;
+  }
+  .socialLink:last-of-type {
+    padding-top: 9px;
+  }
+  .linkedinLink {
+    background-image: url(../images/linkedinLogo.png);
+    height: 30px;
+    width: 110%;
+  }
+  
+  

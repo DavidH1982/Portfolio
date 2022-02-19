@@ -1,0 +1,185 @@
+/* ===================LOGO COLLAGE===================== */
+
+.logoContainer {
+    width: 70vw;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    left: 0;
+    flex-direction: column;
+  }
+  .logoCollage,
+  .logoCollageReflect {
+    display: inline-flex;
+    flex-direction: row;
+    height: 150px;
+    width: 1100px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 0px 50px 15px -30px rgba(0,0,0,0.5);
+  }
+  .logoCollageReflect {
+    transform: rotateX(180deg)translateX(-200px);
+    opacity: 0.1;
+    z-index: 0;
+  }
+  .reflectContainer {
+    height: 150px;
+    width: 700px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    background-image: linear-gradient(to bottom, from (rgba(0,0,0,0.2)), to (rgba(0,0,0,0.8)));
+    z-index: 99;
+  }
+  .logoSpinner {
+    height: 150px;
+    width: 100px;
+    list-style: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+  }
+  .reactLogo {
+    background-image: url("../images/reactLogo.png");
+    animation: reactSpin 6s linear infinite 2.3s;
+  }
+  @keyframes reactSpin {
+    2% { transform: translateX(10px) rotateY(45deg); opacity: 1; z-index: 10; }
+    5% { transform: translateX(40px); opacity: 1; z-index: 10; }
+    10% { transform: translateX(100px); opacity: 1; z-index: 10; }
+    40% { transform: translateX(500px); opacity: 1; z-index: 10; }
+    45% { transform: translateX(560ps); opacity: 1; z-index: 10; }
+    48% { transform: translateX(590px) rotateY(45deg); opacity: 1; z-index: 10; }
+    50% { transform: translateX(600px) rotateY(90deg); opacity: 0.4; z-index: 8; }
+    52% { transform: translateX(590px) rotateY(135deg); opacity: 0.4; z-index: 8; }
+    55% { transform: translateX(560ps) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    60% { transform: translateX(500px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    90% { transform: translateX(100px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    95% { transform: translateX(40px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    98% { transform: translateX(10px) rotateY(135deg); opacity: 0.4; z-index: 8; }
+    0%, 100% { transform: translateX(0px) rotateY(90deg); opacity: 1; z-index: 10; }
+  }
+  .htmlLogo {
+    background-image: url("../images/htmlLogo.png");
+    animation: htmlSpin 6s linear infinite 2s;
+  }
+  @keyframes htmlSpin {
+    31.5% { transform: translateX(400px); opacity: 1; z-index: 10; }
+    36.5% { transform: translateX(460px); opacity: 1; z-index: 10; }
+    39.5% { transform: translateX(490px) rotateY(45deg); opacity: 1; z-index: 10; }
+    41.5% { transform: translateX(500px) rotateY(90deg); opacity: 0.4; z-index: 8; }
+    43.5% { transform: translateX(490px) rotateY(135deg); opacity: 0.4; z-index: 8; }
+    46.5% { transform: translateX(460px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    51.5% { transform: translateX(400px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    81.5% { transform: translateX(0px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    86.5% { transform: translateX(-60px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    89.5% { transform: translateX(-90px) rotateY(135deg); opacity: 0.4; z-index: 8; }
+    91.5% { transform: translateX(-100px) rotateY(90deg); opacity: 1; z-index: 10; }
+    93.5% { transform: translateX(-90px) rotateY(45deg); opacity: 1; z-index: 10; }
+    96.5% { transform: translateX(-60px); opacity: 1; z-index: 10; }
+  }
+  .mongoLogo {
+    background-image: url("../images/mongoLogo.png");
+    animation: mongoSpin 6s linear infinite 1.6s;
+  }
+  @keyframes mongoSpin {
+    23.5% { transform: translateX(300px); opacity: 1; z-index: 10; } 
+    28.5% { transform: translateX(360px); opacity: 1; z-index: 10; } 
+    31.5% { transform: translateX(390px) rotateY(45deg); opacity: 1; z-index: 10; } 
+    33.5% { transform: translateX(400px) rotateY(90deg); opacity: 0.4; z-index: 8; }
+    35.5% { transform: translateX(390px) rotateY(135deg); opacity: 0.4; z-index: 8; }
+    38.5% { transform: translateX(360px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    43.5% { transform: translateX(300px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    73.5% { transform: translateX(-100px) rotateY(180deg); opacity: 0.4; z-index: 8; } 
+    78.5% { transform: translateX(-160px) rotateY(180deg); opacity: 0.4; z-index: 8; } 
+    81.5% { transform: translateX(-190px) rotateY(135deg); opacity: 0.4; z-index: 8; } 
+    83.5% { transform: translateX(-200px) rotateY(90deg); opacity: 1; z-index: 10; }
+    85.5% { transform: translateX(-190px) rotateY(45deg); opacity: 1; z-index: 10; }
+    88.5% { transform: translateX(-160px); opacity: 1; z-index: 10; }
+    93.5% { transform: translateX(-100px); opacity: 1; z-index: 10; }
+  }
+  .cssLogo {
+    background-image: url("../images/cssLogo.png");
+    animation: cssSpin 6s linear infinite 1.2s;
+  }
+  @keyframes cssSpin {
+    15% { transform: translateX(200px); opacity: 1; z-index: 10; }
+    20% { transform: translateX(260px); opacity: 1; z-index: 10; }
+    23% { transform: translateX(290px) rotateY(45deg); opacity: 1; z-index: 10; }
+    25% { transform: translateX(300px) rotateY(90deg); opacity: 0.4; z-index: 8; }
+    27% { transform: translateX(290px) rotateY(135deg); opacity: 0.4; z-index: 8; }
+    30% { transform: translateX(260px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    35% { transform: translateX(200px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    65% { transform: translateX(-200px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    70% { transform: translateX(-260px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    73% { transform: translateX(-290px) rotateY(135deg); opacity: 0.4; z-index: 8; }
+    75% { transform: translateX(-300px) rotateY(90deg); opacity: 1; z-index: 10; }
+    77% { transform: translateX(-290px) rotateY(45deg); opacity: 1; z-index: 10; }
+    80% { transform: translateX(-260px); opacity: 1; z-index: 10; }
+    85% { transform: translateX(-200px); opacity: 1; z-index: 10; }
+  }
+  .mysqlLogo {
+    background-image: url("../images/mysqlLogo.png");
+    animation: mysqlSpin 6s linear infinite 0.8s;
+  }
+  @keyframes mysqlSpin {
+    6.5% { transform: translateX(100px); opacity: 1; z-index: 10; }
+    11.5% { transform: translateX(160px); opacity: 1; z-index: 10; }
+    14.5% { transform: translateX(190px) rotateY(45deg); opacity: 1; z-index: 10; }
+    16.5% { transform: translateX(200px) rotateY(90deg); opacity: 0.4; z-index: 8; }
+    18.5% { transform: translateX(190px) rotateY(135deg); opacity: 0.4; z-index: 8; }
+    21.5% { transform: translateX(160px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    26.5% { transform: translateX(100px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    56.5% { transform: translateX(-300px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    61.5% { transform: translateX(-360px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    64.5% { transform: translateX(-390px) rotateY(135deg); opacity: 0.4; z-index: 8; }
+    66.5% { transform: translateX(-400px) rotateY(90deg); opacity: 1; z-index: 10; }
+    68.5% { transform: translateX(-390px) rotateY(45deg); opacity: 1; z-index: 10; }
+    71.5% { transform: translateX(-360px); opacity: 1; z-index: 10; }
+    76.5% { transform: translateX(-300px); opacity: 1; z-index: 10; }
+  }
+  .javascriptLogo {
+    background-image: url("../images/javascriptLogo.png");
+    animation: jsSpin 6s linear infinite 0.4s;
+  }
+  @keyframes jsSpin {
+    6.5% { transform: translateX(90px) rotateY(45deg); opacity: 1; z-index: 10; }
+    8.5% { transform: translateX(100px) rotateY(90deg); opacity: 0.4; z-index: 8; }
+    10.5% { transform: translateX(90px) rotateY(135deg); opacity: 0.4; z-index: 8; }
+    13.5% { transform: translateX(60px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    18.5% { transform: translateX(0px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    48.5% { transform: translateX(-400px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    53.5% { transform: translateX(-460px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    56.5% { transform: translate(-490px) rotateY(135deg); opacity: 0.4; z-index: 8; }
+    58.5% { transform: translateX(-500px) rotateY(90deg); opacity: 1; z-index: 10; }
+    60.5% { transform: translate(-490px) rotateY(45deg); opacity: 1; z-index: 10; }
+    63.5% { transform: translateX(-460px); opacity: 1; z-index: 10; }
+    68.5% { transform: translateX(-400px); opacity: 1; z-index: 10; }
+  }
+  .vscodeLogo {
+    background-image: url("../images/vscodeLogo.png");
+    animation: vsSpin 6s linear infinite;
+  }
+  @keyframes vsSpin {
+    2% { transform: translateX(-10px) rotateY(135deg); opacity: 0.4; z-index: 8; }
+    5% { transform: translateX(-40px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    10% { transform: translateX(-100px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    40% { transform: translateX(-500px) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    45% { transform: translateX(-560ps) rotateY(180deg); opacity: 0.4; z-index: 8; }
+    48% { transform: translateX(-590px) rotateY(135deg); opacity: 0.4; z-index: 8; }
+    50% { transform: translateX(-600px) rotateY(90deg); opacity: 1; z-index: 10; }
+    52% { transform: translateX(-590px) rotateY(45deg); opacity: 1; z-index: 10; }
+    55% { transform: translateX(-560ps); opacity: 1; z-index: 10; }
+    60% { transform: translateX(-500px); opacity: 1; z-index: 10; }
+    90% { transform: translateX(-100px); opacity: 1; z-index: 10; }
+    95% { transform: translateX(-40px); opacity: 1; z-index: 10; }
+    98% { transform: translateX(-10px) rotateY(45deg); opacity: 1; z-index: 10; }
+    0%, 100% { transform: translateX(0px) rotateY(90deg); opacity: 1; z-index: 10; }
+  }
+  
