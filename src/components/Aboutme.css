@@ -1,0 +1,84 @@
+/* ===================ABOUT ME PAGE==================== */
+.blurry {
+    filter: blur(8px);
+  }
+  .aboutmePage {
+    height: 100vh;
+    width: 97.5vw;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    left: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    z-index: 99;
+  }
+  
+  .aboutmeFrame {
+    margin: 50px auto;
+    border: 25px solid #222;
+    height: 475px;
+    width: 350px;
+    box-shadow: 0px 3px 10px 4px rgba(0, 0, 0, 0.3);
+  }
+  .aboutmeBorder {
+    background: white;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 3px 7px 2px 5px rgba(0, 0, 0, 0.4);
+  }
+  .aboutmePhoto {
+    position: absolute;
+    height: 350px;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 50px;
+    box-shadow: inset 3px 7px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px inset #c9c9c9;
+    background-image: url(../images/Profilepic.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .aboutmePictureScale {
+    transform: scale(0.6);
+    position: absolute;
+    left: -40px;
+    top: -100px;
+    z-index: 99;
+  }
+  .linkDiv {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 200px;
+  }
+  .modelLink {
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  /* ==================3D MODELLING PAGE================== */
+
+.Aboutme_3DModelling {
+    height: 80vh;
+    width: 1200px;
+    position: relative;
+    top: -75px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid black;
+    z-index: 99;
+  }
+  .modellingCloser {
+    float: right;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }

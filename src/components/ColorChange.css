@@ -4,16 +4,16 @@ body {
 
 .grayBlack { background-color: #E6E6E4; color: #212121; }
 .blackGray { background-color: #212121; color: #e6e6e4; }
-.pinkBlue { background-color: rgba(86,129,172,1); color: rgba(250,114,104,1); }
-.bluePink { background-color: rgba(250,114,104,1); color: rgba(86,129,172,1); }
-.mintNavy { background-color: rgba(173,239,209,1); color: rgba(15,60,83,1); }
-.navyMint { background-color: rgba(15,60,83,1); color: rgba(173,239,209,1); }
-.yellowGray { background-color: rgba(214,237,23,1); color: rgba(96,96,96,1); }
-.grayYellow { background-color: rgba(96,96,96,1); color: rgba(214,237,23,1); }
-.greenGreen { background-color: rgba(151,188,98,1); color: rgba(44,95,45,1); }
-.altGreen { background-color: rgba(44,95,45,1); color: rgba(151,188,98,1); }
-.orangeBlack { background-color: rgba(242,170,76,1); color: rgba(16,24,32,1); }
-.blackOrange { background-color: rgba(16,24,32,1); color: rgba(242,170,76,1); }
+.pinkBlue { background-color: #FA7268; color: #5681AC; }
+.bluePink { background-color: #5681AC; color: #FA7268; }
+.mintNavy { background-color: #ADEFD1; color: #0F3C53; }
+.navyMint { background-color: #0F3C53; color: #ADEFD1; }
+.yellowGray { background-color: #D6ED17; color: #606060; }
+.grayYellow { background-color: #606060; color: #D6ED17; }
+.greenGreen { background-color: #97BC62; color: #2C5F2D; }
+.altGreen { background-color: #2C5F2D; color: #97BC62; }
+.orangeBlack { background-color: #F2AA4C; color: #101820; }
+.blackOrange { background-color: #101820; color: #F2AA4C; }
 .sugarBeige { background-color: #A07855 ; color: #D4B996 ; }
 .beigeSugar { background-color: #D4B996 ; color: #A07855 ; }
 .blueSilver { background-color: #195190; color: #A2A2A1; }
@@ -62,18 +62,18 @@ body {
   border: solid 2px darkslategray;
   box-sizing: border-box;
   }
-.colorChoice1 { background: linear-gradient(235deg, rgba(230,230,228,1) 49%, rgba(33,33,33,1) 51%);}
-.colorChoice2 { background: linear-gradient(55deg, rgba(230,230,228,1) 49%, rgba(33,33,33,1) 51%);}
-.colorChoice3 { background: linear-gradient(235deg, rgba(250,114,104,1) 49%, rgba(86,129,172,1) 51%);}
-.colorChoice4 { background: linear-gradient(55deg, rgba(250,114,104,1) 49%, rgba(86,129,172,1) 51%);}
-.colorChoice5 { background: linear-gradient(235deg, rgba(173,239,209,1) 49%, rgba(15,60,83,1) 51%);}
-.colorChoice6 { background: linear-gradient(55deg, rgba(173,239,209,1) 49%, rgba(15,60,83,1) 51%);}
-.colorChoice7 { background: linear-gradient(235deg, rgba(214,237,23,1) 49%, rgba(96,96,96,1) 51%);}
-.colorChoice8 { background: linear-gradient(55deg, rgba(214,237,23,1) 49%, rgba(96,96,96,1) 51%);}
-.colorChoice9 { background: linear-gradient(235deg, rgba(151,188,98,1) 49%, rgba(44,95,45,1) 51%);}
-.colorChoice10 { background: linear-gradient(55deg, rgba(151,188,98,1) 49%, rgba(44,95,45,1) 51%);}
-.colorChoice11 { background: linear-gradient(235deg, rgba(242,170,76,1) 49%, rgba(16,24,32,1) 51%);}
-.colorChoice12 { background: linear-gradient(55deg, rgba(242,170,76,1) 49%, rgba(16,24,32,1) 51%);}
+.colorChoice1 { background: linear-gradient(55deg, #E6E6E4 49%, #212121 51%);}
+.colorChoice2 { background: linear-gradient(55deg, #212121 49%, #E6E6E4 51%);}
+.colorChoice3 { background: linear-gradient(55deg, #FA7268 49%, #5681AC 51%);}
+.colorChoice4 { background: linear-gradient(55deg, #5681AC 49%, #FA7268 51%);}
+.colorChoice5 { background: linear-gradient(55deg, #ADEFD1 49%, #0F3C53 51%);}
+.colorChoice6 { background: linear-gradient(55deg, #0F3C53 49%, #ADEFD1 51%);}
+.colorChoice7 { background: linear-gradient(55deg, #D6ED17 49%, #606060 51%);}
+.colorChoice8 { background: linear-gradient(55deg, #606060 49%, #D6ED17 51%);}
+.colorChoice9 { background: linear-gradient(55deg, #97BC62 49%, #2C5F2D 51%);}
+.colorChoice10 { background: linear-gradient(55deg, #2C5F2D 49%, #97BC62 51%);}
+.colorChoice11 { background: linear-gradient(55deg, #F2AA4C 49%, #101820 51%);}
+.colorChoice12 { background: linear-gradient(55deg, #101820 49%, #F2AA4C 51%);}
 .colorChoice13 { background: linear-gradient(55deg, #A07855 49%, #D4B996 51%);}
 .colorChoice14 { background: linear-gradient(55deg, #D4B996 49%, #A07855 51%);}
 .colorChoice15 { background: linear-gradient(55deg, #195190 49%, #A2A2A1 51%);}

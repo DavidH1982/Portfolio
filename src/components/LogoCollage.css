@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    top: 200px;
+    top: 270px;
     left: 0;
     flex-direction: column;
   }
@@ -25,6 +25,7 @@
   .logoCollageReflect {
     transform: rotateX(180deg)translateX(-200px);
     opacity: 0.1;
+    filter: blur(2px);
     z-index: 0;
   }
   .reflectContainer {

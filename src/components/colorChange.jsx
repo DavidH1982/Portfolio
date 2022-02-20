@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../ColorChange.css";
+import "./ColorChange.css";
 
 const ColorChange = () => {
 

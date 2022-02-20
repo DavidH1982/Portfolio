@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../App.css";
+import "./Home-quote.css";
 import LogoCollage from "./LogoCollage";
 
 const num = Math.ceil(Math.random() * 1643);

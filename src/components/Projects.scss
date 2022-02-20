@@ -1,0 +1,260 @@
+/* =====================PROJECTS PAGE=================== */
+
+.blurry {
+    filter: blur(8px);
+  }
+  
+  .projectsPage {
+    height: 100vh;
+    width: 97.5vw;
+    box-sizing: border-box;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .projectText {
+    width: 80vw;
+    height: 150px;
+    margin: 10px auto;
+    z-index: 99;
+  }
+  
+  .modalContainer {
+    height: 200px;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    top: 20px;
+    left: 5vw;
+    z-index: 99;
+  }
+  .projectThumbnails {
+    height: 180px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    z-index: 99;
+  }
+  .thumbnail1-border {
+    height: 180px;
+    width: 400px;
+    transform: scale(1.1) translateY(-20px) translateX(-20px);
+    border:solid 5px hsla(0, 95%, 35%, 0.7);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    z-index: 99;
+  }
+  .thumbnail2-border1,
+  .thumbnail2-border2 {
+    position: relative;
+    height: 180px;
+    width: 400px;
+    border: 2px solid hsla(0, 95%, 35%, 0.7);
+    box-sizing: border-box;
+    z-index: -1;
+  }
+  .thumbnail2-border1 {
+    transform: scaleY(1.2);
+  }
+  .thumbnail2-border2 {
+    transform: scaleX(1.1);
+    top: -180px;
+  }
+  .projectThumbnails:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  .mandcCloneThumbnail {
+    background-image: url(../images/mandcClone.png);
+    padding: 1em;
+  }
+  .keycodeThumbnail {
+    background-image: url(../images/keycodeChallenge.png);
+  }
+  .drumkitThumbnail {
+    background-image: url(../images/drumkitProject.png);
+  }
+  .diceGameThumbnail {
+    background-image: url(../images/dicegameProject.png);
+  }
+  .thumbnail5 {
+    padding: 20px 40px;
+    background: none;
+    border: none;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;}
+  .thumbnail5:after, .thumbnail5:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border: 2px solid #000;
+        transition: transform .2s;} 
+        .thumbnail5:after{
+        transform: translate(3px, 3px)}	
+        .thumbnail5:before{
+        transform: translate(-3px, -3px)}
+        // .thumbnail5:hover{
+        //   .thumbnail5:after, .thumbnail5:before
+        //   transform: translate(0)}
+  
+  
+  .groupProjectThumbnail {
+    background-image: url(../images/moodtone.png);
+  }
+  .modalHidden {
+    width: 18%;
+    opacity: 0;
+  }
+  .modalShown {
+    width: 18%;
+    opacity: 1;
+  }
+  .popupContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 2000px;
+    height: 300px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+  }
+  .modal {
+    height: 630px;
+    width: 500px;
+    background-color: white;
+    z-index: 99;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+  }
+  .modal button {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    position: relative;
+    left: 209px;
+    top: -19px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid black;
+  }
+  .modal button:hover {
+    opacity: 0.7;
+  }
+  h2 {
+    margin-top: -20px;
+    margin-bottom: -10px;
+  }
+  .modal p {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 18px;
+    font-size: 16px;
+  }
+  .modal p hr {
+    width: 70%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .modal p a,
+  .modal a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .modal p a:hover,
+  .modal p a:link,
+  .modal p a:active,
+  .modal p a:visited,
+  .modal a:hover,
+  .modal a:link,
+  .modal a:active,
+  .modal a:visited {
+    color: black;
+  }
+  .modal1 {
+    animation: modal1Entry 0.8s ease-out 1 forwards
+  }
+  @keyframes modal1Entry {
+    0% {
+      transform: translateY(-1000px) translateX(480px);
+    }
+    100% {
+      transform: translateY(-200px) translateX(480px);
+    }
+  }
+  .modal2 {
+    animation: modal2Entry 0.8s ease-out 1 forwards
+  }
+  @keyframes modal2Entry {
+    0% {
+      transform: translateY(-1000px) translateX(170px);
+    }
+    100% {
+      transform: translateY(-200px) translateX(170px);
+    }
+  }
+  .modal3 {
+    animation: modal3Entry 0.8s ease-out 1 forwards
+  }
+  @keyframes modal3Entry {
+    0% {
+      transform: translateY(-1000px) translateX(-140px);
+    }
+    100% {
+      transform: translateY(-200px) translateX(-140px);
+    }
+  }
+  .modal4 {
+    animation: modal4Entry 0.8s ease-out 1 forwards
+  }
+  @keyframes modal4Entry {
+    0% {
+      transform: translateY(1000px) translateX(-450px);
+    }
+    100% {
+      transform: translateY(-200px) translateX(-450px);
+    }
+  }
+  .modal5 {
+    animation: modal5Entry 0.8s ease-out 1 forwards
+  }
+  @keyframes modal5Entry {
+    0% {
+      transform: translateY(1000px) translateX(-760px);
+    }
+    100% {
+      transform: translateY(-200px) translateX(-760px);
+    }
+  }
+  .modal6 {
+    animation: modal6Entry 0.8s ease-out 1 forwards
+  }
+  @keyframes modal6Entry {
+    0% {
+      transform: translateY(1000px) translateX(-1070px);
+    }
+    100% {
+      transform: translateY(-200px) translateX(-1070px);
+    }
+  }

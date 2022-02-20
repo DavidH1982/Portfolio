@@ -1,0 +1,105 @@
+/* =================QUOTATION STYLING================== */
+
+.quoteContainer,
+.quoteClose {
+  height: 150px;
+  width: 70vw;
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 3px solid #212121;
+  border-left: 3px solid #212121;
+  border-bottom: 1px solid #212121;
+  border-right: 1px solid #212121;
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px 2px rgba(0,0,0,0.78);
+  position: relative;
+  bottom: -200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: unset;
+  opacity: 0.8;
+  z-index: 99;
+  /* background: none; */
+}
+.quoteContainer {
+  animation: quoteEntry 2s cubic-bezier(.29,.9,.53,1) 1;
+}
+.quoteCloser {
+  border: 1px solid #212121;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  position: relative;
+  left: 99%;
+  top: -9px;
+}
+.quoteCloser:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.quoteCloser p {
+  height: inherit;
+  width: inherit; 
+  text-align: center; 
+  margin: 0;
+  position: inherit;
+  line-height: 15px;
+}
+
+@keyframes quoteEntry {
+  0% {
+    opacity: 0;
+    transform: translateY(350px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+
+  }
+}
+.quoteText {
+  height: 130px;
+  font-size: 36px;
+  font-family: 'Tangerine';
+  height: 250px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.quoteText p {
+  margin: 0;
+}
+.quoteAuthor {
+  font-size: 16px;
+  font-weight: bold;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.quoteLink:active,
+.quoteLink:visited,
+.quoteLink:link {
+  text-decoration: none;
+}
+.quoteClose {
+  animation: close 1.2s ease 1;
+  animation-fill-mode: forwards;
+  bottom: 350;
+}
+@keyframes close {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(1250px);
+  }
+}
+blurry {
+    filter: blur(8px);
+}

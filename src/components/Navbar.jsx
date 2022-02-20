@@ -10,8 +10,8 @@ const Navbar = () => {
         <Router>
         <div className={"navbarContainer"}>
             <Link to="/Portfolio" className="navLink navbarMenuItem">Home</Link>
-            <Link to="/aboutme" className="navLink navbarMenuItem">About Me</Link>
-            <Link to="/projects" className="navLink navbarMenuItem">Projects</Link>
+            <Link to="/Aboutme" className="navLink navbarMenuItem">About Me</Link>
+            <Link to="/Projects" className="navLink navbarMenuItem">Projects</Link>
             <div className="navbarMenuItem socialLinkContainer">
                 <a href="https://github.com/DavidH1982" target='_blank' rel="noreferrer" className="socialLink navLink githubLink">
                     <img
